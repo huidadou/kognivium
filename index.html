@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kognivium</title>
+  <meta name="description" content="Kognivium — Mission-driven projects in AI and innovation.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#home">
+        <img src="assets/logo.svg" alt="Kognivium logo" width="36" height="36">
+        <span>Kognivium</span>
+      </a>
+      <nav class="primary-nav">
+        <a href="#founding-story">Story</a>
+        <a href="#vision">Vision</a>
+        <a href="#mission">Mission</a>
+        <a href="#values">Values</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero container">
+      <h1>Elevate Humanity</h1>
+      <p class="lead">We are Kognivium — making knowledge accessible to all through innovative technology and human-centered design.</p>
+      <a class="cta" href="#contact">Work with us</a>
+    </section>
+
+    <section id="founding-story" class="section container">
+      <h2>Our Story</h2>
+      <p>Founded with a vision to democratize knowledge and learning, Kognivium emerged from the belief that everyone deserves access to quality education and innovative tools. Our journey began with a simple yet powerful idea: technology should serve humanity, not the other way around. Today, we continue to build solutions that make knowledge more accessible, engaging, and effective for learners worldwide.</p>
+    </section>
+
+    <section id="vision" class="section container">
+      <h2>Vision</h2>
+      <p>Elevate Humanity</p>
+    </section>
+
+    <section id="mission" class="section container">
+      <h2>Mission</h2>
+      <p>Make knowledge accessible to all</p>
+    </section>
+
+    <section id="values" class="section container">
+      <h2>Our Values</h2>
+      <div class="values-grid">
+        <div class="value-card">
+          <h3>Human-Centered</h3>
+          <p>We prioritize human needs and experiences in everything we build. Our solutions are designed with empathy, understanding that technology should enhance human potential rather than replace it. Every decision we make is guided by how it will impact real people and communities.</p>
+        </div>
+        <div class="value-card">
+          <h3>Future-Oriented</h3>
+          <p>We think beyond today's challenges to anticipate tomorrow's opportunities. Our approach combines cutting-edge technology with forward-thinking design, ensuring our solutions remain relevant and valuable as the world evolves. We're not just building for now—we're building for the future.</p>
+        </div>
+        <div class="value-card">
+          <h3>Evidence-Based</h3>
+          <p>Every decision we make is grounded in data, research, and proven methodologies. We believe in the power of evidence to drive innovation and improvement. Our commitment to evidence-based practices ensures that our solutions are not just innovative, but truly effective and reliable.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section container">
+      <h2>Our Projects</h2>
+      <div class="projects-grid" id="projectsGrid">
+        <article class="card">
+          <h3>KogniMath</h3>
+          <p>An innovative mathematics learning platform that makes complex mathematical concepts accessible through interactive visualizations, step-by-step problem solving, and personalized learning paths. KogniMath transforms how students engage with mathematics, making it both enjoyable and effective.</p>
+          <a href="https://www.kognimath.com" target="_blank" rel="noopener noreferrer" class="project-link">Visit KogniMath →</a>
+        </article>
+        <article class="card">
+          <h3>KogniPlay</h3>
+          <p>A gamified learning ecosystem that turns education into an engaging adventure. Through interactive games, challenges, and collaborative projects, KogniPlay makes learning fun while ensuring deep understanding and retention of knowledge across various subjects and age groups.</p>
+          <a href="https://www.kogniplay.com" target="_blank" rel="noopener noreferrer" class="project-link">Visit KogniPlay →</a>
+        </article>
+        <article class="card">
+          <h3>KogniLoop</h3>
+          <p>A comprehensive learning management system that creates continuous learning loops for individuals and organizations. KogniLoop tracks progress, identifies knowledge gaps, and provides targeted recommendations to ensure continuous improvement and mastery of skills and concepts.</p>
+          <a href="https://www.kogniloop.com" target="_blank" rel="noopener noreferrer" class="project-link">Visit KogniLoop →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section container">
+      <h2>Contact</h2>
+      <p>Have a project in mind? Let's talk.</p>
+      <form id="contactForm" action="https://formspree.io/f/your-id" method="POST" class="contact-form">
+        <div class="row">
+          <label>
+            Name
+            <input type="text" name="name" required>
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required>
+          </label>
+        </div>
+        <label>
+          Company
+          <input type="text" name="company">
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <input type="hidden" name="site" value="kognivium.com">
+        <button type="submit">Send message</button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Kognivium. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
